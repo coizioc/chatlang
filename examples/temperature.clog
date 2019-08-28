@@ -1,0 +1,9 @@
+[5:44 PM] Coizioc: Make temperature do with fahrenheit: return fahrenheit minus 32 divided by 1.8. Done.
+[5:44 PM] Vivian: Make my temperature do with celcius: give back celcius times 1.8 plus 32. Done.
+[5:45 PM] Coizioc: Call my temperature with 68.
+[5:45 PM] Vivian: Call temperature with 20.
+[5:45 PM] Coizioc: ...
+[5:45 PM] Vivian: Call your temperature with 68.
+[5:45 PM] Wowee: Call @Coizioc's temperature with 68.
+[5:46 PM] Wowee: My temperature is @Vivian's temperature.
+[5:46 PM] Wowee: Call my temperature with 20.
