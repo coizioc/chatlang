@@ -218,7 +218,7 @@ Operations are evaluated from left to right, ignoring the order of operations.
 | --------- | ------------------------------------- | ------------------------------------- |
 | +         | `A plus B`, `A and B`, `A added to B` | `add A and B`                         |
 | -         | `A minus B`, `A without B`            | `subtract A ` [`and ` | ` from`] ` B` |
-| *         | `A times B`, `A multiplied with B`    | `multiplied A and B`                  |
+| *         | `A times B`, `A multiplied with B`    | `multipliy A and B`                   |
 | /         | `A divided by B`                      | `divide A` [`and` | `by`] `B`         |
 | %         | `A remain B`, `A remains B`           |                                       |
 
