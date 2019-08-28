@@ -315,6 +315,12 @@ To create a function, one can use the syntax:
 make VAR do (with PARAM, PARAM, ...): STATEMENT. STATEMENT. ... Done.
 ```
 
+We can return a value from a function using a return statement:
+
+```
+[return | give back] VAR.
+```
+
 For example, we can create a greeting function by doing the following:
 
 ```
