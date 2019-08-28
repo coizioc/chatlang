@@ -6,7 +6,7 @@
 [9:44] Coizioc: Say "Hello World!".
 ```
 
-For more examples of programs written in Chatlang, check out the **examples** directory in this repo.
+For more examples of programs written in Chatlang, check out the [examples](examples) directory in this repo.
 
 The design of Chatlang is inspired mostly by [Rockstar](https://esolangs.org/wiki/Rockstar) and [FiM++](https://esolangs.org/wiki/FiM++).
 
