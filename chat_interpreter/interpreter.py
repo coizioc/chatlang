@@ -1,5 +1,5 @@
 from chat_interpreter.tokens import TokenType
-from chat_interpreter.base_classes import *
+from chat_interpreter.ast import NodeVisitor
 
 
 class ReturnError(Exception):
@@ -15,6 +15,13 @@ class Interpreter(NodeVisitor):
         self.prev_scope = None
         self.curr_scope = None
         self.curr_msg = 0
+
+    def format_output(self, out):
+        if type(out) == float:
+            # Convert integer-valued floats to ints for printing.
+            if int(out) == out:
+                out = int(out)
+        return out
 
     def interpret(self):
         tree = self.parser.parse()
@@ -66,7 +73,7 @@ class Interpreter(NodeVisitor):
     def visit_FuncCallStmt(self, node):
         ret = self.visit(node.func_call)
         if ret:
-            ret = format_output(ret)
+            ret = self.format_output(ret)
             print(ret)
 
     def visit_FuncDecl(self, node):
@@ -157,7 +164,7 @@ class Interpreter(NodeVisitor):
 
     def visit_PrintStmt(self, node):
         out = self.visit(node.value)
-        out = format_output(out)
+        out = self.format_output(out)
         print(out)
 
     def visit_ReturnStmt(self, node):
