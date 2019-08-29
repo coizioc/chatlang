@@ -1,5 +1,5 @@
-from tokens import TokenType
-from base_classes import *
+from chat_interpreter.tokens import TokenType
+from chat_interpreter.base_classes import *
 
 
 class ReturnError(Exception):

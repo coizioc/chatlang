@@ -74,10 +74,10 @@ class Token():
 
     keywords_program = keywords_program[:-2] + '\n}\n'
 
-    with open('tokens.py', 'w+') as f:
+    with open('chat_interpreter/tokens.py', 'w+') as f:
         f.write(program)
 
-    with open('keywords.py', 'w+') as f:
+    with open('chat_interpreter/keywords.py', 'w+') as f:
         f.write(keywords_program)
 
 if __name__ == '__main__':

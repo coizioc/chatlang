@@ -1,5 +1,5 @@
-from tokens import Token, TokenType
-from keywords import KEYWORDS
+from chat_interpreter.tokens import Token, TokenType
+from chat_interpreter.keywords import KEYWORDS
 
 
 class Lexer():

@@ -1,11 +1,6 @@
 import sys
 
-from lexer import Lexer
-from token_parser import Parser
-from interpreter import Interpreter
-from make_tokens import make_token
-
-make_token()
+from chat_interpreter import *
 
 def run_file(filename):
     with open(filename, 'r') as f:
@@ -23,15 +18,12 @@ def run_prompt():
 def run(source, filename):
     scanner = Lexer(source, filename)
     scanner.scan_tokens()
-    # print(scanner)
     if scanner.has_error:
         return True
 
     parser = Parser(scanner)
     interpreter = Interpreter(parser)
     interpreter.interpret()
-
-    # print(interpreter.scopes)
     return False
 
 if __name__ == '__main__':

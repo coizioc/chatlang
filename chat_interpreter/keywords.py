@@ -1,4 +1,4 @@
-from tokens import TokenType
+from chat_interpreter.tokens import TokenType
 
 KEYWORDS = {
     "i": TokenType.I,

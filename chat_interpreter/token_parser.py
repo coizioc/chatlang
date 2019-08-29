@@ -1,6 +1,7 @@
-from ast import *
-from tokens import TokenType
 import traceback
+
+from chat_interpreter.ast import *
+from chat_interpreter.tokens import TokenType
 
 SCOPE_PREV_TOKENTYPES = [TokenType.YOU, TokenType.YOUR, TokenType.YOURSELF]
 SCOPE_SELF_TOKENTYPES = [TokenType.I, TokenType.ME, TokenType.MY, TokenType.MYSELF]
